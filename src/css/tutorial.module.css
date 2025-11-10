@@ -1,0 +1,42 @@
+/* ========================================================
+   FILE: src/css/tutorial.module.css
+   PURPOSE: Styles for tutorial-related pages/components, 
+            specifically for displaying embedded video grids.
+   STRUCTURE:
+     - .videoGrid: Container for multiple embedded videos
+     - .videoGrid iframe: Individual embedded video styling
+   NOTES:
+     - Uses flexbox for responsive layout
+     - Maintains 16:9 aspect ratio for all videos
+     - Rounded corners and no border for a clean appearance
+======================================================== */
+
+/* ========================================================
+   Video grid container
+   - Flex container for embedded videos
+   - Aligns videos to start, wraps onto new lines if needed
+   - Gap between videos and margin below grid
+======================================================== */
+.videoGrid {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* ========================================================
+   Embedded video iframe styles
+   - Flexible width with minimum size of 640px
+   - Max-width 100% ensures responsiveness
+   - Maintains 16:9 aspect ratio
+   - Rounded corners, no border
+======================================================== */
+.videoGrid iframe {
+  flex: 1 1 640px;
+  max-width: 100%;
+  border-radius: 8px;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: none;
+}

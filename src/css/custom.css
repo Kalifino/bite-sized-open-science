@@ -1,0 +1,57 @@
+/* ========================================================
+   FILE: src/css/custom.css
+   PURPOSE: Custom global CSS overrides and variables for the Docusaurus site.
+            Includes color palette, button styling, input/textarea styles,
+            and contact page specific adjustments.
+   STRUCTURE:
+     - CSS variables: Primary color palette and button radius
+     - Input and textarea styles: Global form element styling
+     - Contact page styles: Page-specific layout adjustments
+   NOTES:
+     - Variables use Docusaurus' --ifm-* naming convention
+     - Contact page adjustments override default Docusaurus layout
+======================================================== */
+
+/* ========================================================
+   CSS Variables (custom color palette & button radius)
+   - Provides consistent primary colors for theme
+   - Button border radius variable for uniform rounding
+======================================================== */
+:root {
+  --ifm-color-primary: #ec9007;
+  --ifm-color-primary-dark: #e19c24;
+  --ifm-color-primary-darker: #c6891f;
+  --ifm-color-primary-darkest: #a67119;
+  --ifm-color-primary-light: #ffc764;
+  --ifm-color-primary-lighter: #ffd88e;
+  --ifm-color-primary-lightest: #ffe7b6;
+
+  --ifm-button-border-radius: 6px;
+}
+
+/* ========================================================
+   Global input and textarea styling
+   - Applies consistent padding, font size, width, and border radius
+   - Uses button radius variable for visual consistency
+======================================================== */
+input, textarea {
+  border-radius: var(--ifm-button-border-radius);
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* ========================================================
+   Contact page specific styles
+   - Overrides Docusaurus default layout for the contact page
+   - Ensures container text alignment and form width
+======================================================== */
+.page-contact .container {
+  text-align: left !important;
+}
+
+.page-contact form {
+  margin-left: 0;
+  max-width: 600px;
+}

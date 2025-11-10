@@ -1,0 +1,77 @@
+/* ========================================================
+   FILE: src/components/HomepageFeatures/styles.module.css
+   PURPOSE: CSS module for styling the HomepageFeatures component, 
+            including feature cards and embedded video grid.
+   STRUCTURE:
+     - .features: Container for the feature cards
+     - .featureSvg: Styles for feature icons (SVGs)
+     - Media query: Responsive adjustments for small screens
+     - .videoGrid: Container for a grid of videos
+     - .videoGrid iframe: Styles for embedded video iframes
+   NOTES:
+     - Uses flexbox for layout and spacing
+     - Includes responsive design for mobile devices
+     - CSS module ensures styles are scoped locally
+======================================================== */
+
+/* ========================================================
+   Features section container
+   - Uses flexbox to center and wrap feature cards
+   - Gap between items and vertical padding
+======================================================== */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 0;
+  flex-wrap: wrap;
+}
+
+/* ========================================================
+   Individual feature SVG icons
+   - Fixed width and height
+   - Margin below the icon
+======================================================== */
+.featureSvg {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 1rem;
+}
+
+/* ========================================================
+   Responsive adjustments for small screens (max-width: 600px)
+   - Reduces SVG size for better mobile layout
+======================================================== */
+@media (max-width: 600px) {
+  .featureSvg {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* ========================================================
+   Video grid container
+   - Flex container for embedded videos
+   - Wraps and adds gaps between videos
+======================================================== */
+.videoGrid {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+/* ========================================================
+   Embedded video iframe styles
+   - Flexible width, responsive to container
+   - Maintains 16:9 aspect ratio
+   - Rounded corners and no border
+======================================================== */
+.videoGrid iframe {
+  flex: 1 1 640px;
+  max-width: 100%;
+  border-radius: 8px;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: none;
+}

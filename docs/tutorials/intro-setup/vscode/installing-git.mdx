@@ -1,0 +1,81 @@
+---
+title: Installing Git
+---
+
+import styles from '@site/src/css/tutorial.module.css';
+
+<div className={styles.videoGrid}>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/n4NpYbT98jQ?si=Lvlk5mveUIdpBOB3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+Welcome to another Bite-Sized tutorial! Today, we’ll walk you through installing **Git**, the essential tool for managing your code and collaborating with others.
+
+---
+
+### Step 1: Downloading and Installing Git
+
+1. Open your browser and visit the official Git website: [git-scm.com](https://git-scm.com).  
+2. Click the big **Download** button on the homepage. The website should automatically detect your operating system.  
+3. For **Windows** users:  
+   - Run the downloaded installer.  
+   - During installation, mostly accept the default options.  
+   - Make sure to keep **“Git from the command line and also from 3rd-party software”** selected.  
+4. For **Mac** users:  
+   - You can download the installer from the site or  
+   - Install via Homebrew by running in the terminal:  
+
+   ```bash
+   brew install git
+   ```
+
+5. For **Linux** users (Ubuntu example):  
+   Open a terminal and type:  
+
+   ```bash
+    sudo apt update && sudo apt install git
+   ```
+
+---
+
+### Step 2: Verify Git Installation in VSCode Terminal
+
+1. Open your terminal inside VSCode by pressing:  
+   - **Ctrl + `** (Windows/Linux) or  
+   - **Cmd + `** (Mac)  
+2. Type the following command:  
+
+   ```bash
+    git --version
+   ```
+
+3. If Git is installed correctly, you’ll see the Git version number printed.  
+4. If you get an error, double-check your installation or try restarting your terminal/computer.
+
+---
+
+### Step 3: (Optional) Set up Your Git Identity
+
+If this is your first time using Git, configure your user name and email. This information will appear in your commit history.
+
+Run these commands in the terminal (replace with your details):
+
+<pre><code class="language-bash">
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+</code></pre>
+
+---
+
+### Additional Resources
+
+- [Official Git Documentation](https://git-scm.com/doc)  
+- [Git Tutorial for Beginners](https://www.atlassian.com/git/tutorials)  
+- [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
+
+---
+
+### What’s Next?
+
+In the next video, we’ll introduce **virtual environments** — a great way to manage dependencies in your Python projects and keep things organized.
+
+Thanks for watching and happy coding!

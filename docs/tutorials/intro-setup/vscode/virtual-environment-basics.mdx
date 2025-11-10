@@ -1,0 +1,76 @@
+---
+title: Virtual Environment (venv) Basics
+---
+
+import styles from '@site/src/css/tutorial.module.css';
+
+<div className={styles.videoGrid}>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/UxGZHxXlBIY?si=8FSMTNo0ACKGS6Ge" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+Welcome to another Bite-Sized tutorial! Today, we’re diving into **virtual environments** — a simple but powerful tool for managing your Python projects.
+
+---
+
+### What is a Virtual Environment?
+
+Think of a virtual environment like a box, a separate space on your computer where your project lives with its own set of Python packages. This way, different projects won’t interfere with each other.
+
+Without virtual environments, all Python packages are installed globally, which can lead to version conflicts or unexpected bugs when working on multiple projects. Virtual environments keep everything neat and tidy.
+
+---
+
+### Creating and Activating a Virtual Environment in VSCode
+
+1. Open your terminal in VSCode and navigate to your project folder.
+2. Create a new virtual environment by typing:
+
+<pre><code class="language-bash">
+python -m venv env
+</code></pre>
+
+Here, `env` is the folder name for your virtual environment—you can name it anything you like.
+
+3. To activate the virtual environment:  
+
+- On **Windows**, run:
+
+<pre><code class="language-bash">
+.\env\Scripts\activate
+</code></pre>
+
+- On **Mac/Linux**, run:
+
+<pre><code class="language-bash">
+source env/bin/activate
+</code></pre>
+
+When activated, your terminal prompt will show the virtual environment’s name, meaning you’re working inside it.
+
+---
+
+### Deactivating the Virtual Environment
+
+When you’re done working, simply type:
+
+<pre><code class="language-bash">
+deactivate
+</code></pre>
+
+This exits the virtual environment and returns you to your normal system settings.
+
+---
+
+### Additional Resources
+
+- [Python Virtual Environments Official Documentation](https://docs.python.org/3/tutorial/venv.html)  
+- [Real Python: Python Virtual Environments: A Primer](https://realpython.com/python-virtual-environments-a-primer/)  
+- [VSCode Python Tutorial](https://code.visualstudio.com/docs/python/python-tutorial)
+
+---
+
+### What’s Next?
+
+Next, we’ll connect your project to Git and GitHub using VSCode, so you can start tracking changes and collaborating smoothly.
+
+Thanks for watching and happy coding!

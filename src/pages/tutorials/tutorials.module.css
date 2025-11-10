@@ -1,0 +1,196 @@
+/* ========================================================
+   FILE: src/pages/tutorials/tutorials.module.css
+   PURPOSE: Page-specific CSS for the Tutorials page.
+            Includes hero section, category cards, full tutorial structure,
+            icons, and dark mode overrides.
+   STRUCTURE:
+     - Hero Section: Page heading and intro text
+     - Categories Grid: Tutorial categories with hover effects and disabled styling
+     - Icons: Styling for category icons
+     - Full Tutorial Structure: 3-column layout with lists and links
+     - Dark Mode: Overrides for hero, category cards, structure, and links
+   NOTES:
+     - Uses flexbox and CSS grid for layout
+     - Responsive-friendly with auto-fit grids
+     - Dark mode selectors leverage Docusaurus data-theme attribute
+======================================================== */
+
+/* ========================================================
+   HERO SECTION
+   - Background, padding, text color, and center alignment
+   - Headings and paragraph typography
+======================================================== */
+.heroSection {
+  background-color: #ec9007;
+  padding: 4rem 2rem;
+  color: white;
+  text-align: center;
+}
+
+.heroSection h1 { 
+  font-size: 2.5rem; 
+  margin-bottom: 1rem; 
+}
+
+.heroSection p { 
+  font-size: 1.2rem; 
+  margin-bottom: 2rem; 
+}
+
+/* ========================================================
+   CATEGORIES GRID
+   - Flex container for tutorial categories
+   - Each category card has padding, shadow, hover effect, and border-radius
+   - Disabled cards are semi-transparent and non-interactive
+   - "Coming Soon" badge positioned absolutely
+======================================================== */
+.categoryGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 3rem 0;
+  gap: 1rem;
+}
+
+.categoryCard {
+  flex: 1 1 30%;
+  background-color: #f9f9f9;
+  padding: 2rem;
+  margin: 1rem;
+  text-align: left;
+  position: relative;
+  border-radius: 0.5rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.categoryCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.categoryCard h2 { 
+  margin-top: 0.5rem; 
+  font-size: 1.5rem;
+}
+
+.categoryCard ul { 
+  margin-top: 1rem; 
+  padding-left: 1rem;
+}
+
+.disabled { 
+  opacity: 0.6; 
+  pointer-events: none; 
+}
+
+.comingSoonText {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: red;
+  font-weight: bold;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  z-index: 10;
+}
+
+/* ========================================================
+   ICONS
+   - Category icons styling (size, color, margin)
+======================================================== */
+.icon { 
+  font-size: 2rem; 
+  color: #ec9007; 
+  margin-bottom: 0.5rem;
+}
+
+/* ========================================================
+   FULL TUTORIAL STRUCTURE
+   - Container styling, background, border-radius
+   - Heading styling with decorative underline
+   - Grid layout for columns
+   - Lists and links styling
+======================================================== */
+.structureSection {
+  margin: 3rem 0;
+  padding: 2rem;
+  background-color: #f0f4f8;
+  border-radius: 0.5rem;
+}
+
+.structureSection h2 { 
+  margin-bottom: 2rem; 
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.structureSection h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #ec9007;
+  margin: 0.5rem 0 0 0;
+  border-radius: 2px;
+}
+
+.structureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.structureSection ul { 
+  margin-left: 1rem; 
+}
+
+.structureSection li { 
+  margin-bottom: 0.5rem; 
+}
+
+.structureSection a {
+  color: #ec9007;
+  text-decoration: none;
+}
+
+.structureSection a:hover {
+  text-decoration: underline;
+}
+
+/* ========================================================
+   DARK MODE OVERRIDES
+   - Leverages Docusaurus data-theme attribute
+   - Adjusts hero section, category cards, icons, structure section, and links
+======================================================== */
+:root[data-theme='dark'] .heroSection { 
+  background-color: #ec9007; 
+  color: #000; 
+}
+
+:root[data-theme='dark'] .heroSection h1,
+:root[data-theme='dark'] .heroSection p { 
+  color: #000; 
+}
+
+:root[data-theme='dark'] .categoryCard { 
+  background-color: #2b2b2b; 
+  color: #dddddd; 
+  box-shadow: 0 3px 8px rgba(255,255,255,0.05);
+}
+
+:root[data-theme='dark'] .icon { 
+  color: #ec9007; 
+}
+
+:root[data-theme='dark'] .structureSection { 
+  background-color: #1e1e1e; 
+  color: #fff; 
+}
+
+:root[data-theme='dark'] .categoryCard a,
+:root[data-theme='dark'] .structureSection a { 
+  color: #ec9007; 
+}

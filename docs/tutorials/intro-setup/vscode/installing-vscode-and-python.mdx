@@ -1,0 +1,81 @@
+---
+title: Installing VSCode and Python
+---
+
+import styles from '@site/src/css/tutorial.module.css';
+
+<div className={styles.videoGrid}>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/2ohITNUCyZQ?si=MMkaUblDBYT28Lec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+Welcome back to **Bite-Sized**! In this tutorial, we’ll guide you step-by-step through installing **Visual Studio Code (VSCode)** and **Python** on your computer. We’ll finish by running a simple “Hello, World!” program to confirm everything works perfectly.
+
+---
+
+### Step 1: Installing VSCode
+
+1. Go to the official website: [code.visualstudio.com](https://code.visualstudio.com/).  
+2. The site should detect your operating system automatically. Click the download button to get the installer.  
+3. Run the installer:  
+   - **Windows users:** Make sure to **check “Add to PATH”** during installation. This allows you to run VSCode commands from the terminal easily.  
+4. Once installed, launch VSCode and get ready for coding!
+
+:::tip
+You can customize VSCode with themes and extensions to match your workflow. We'll cover recommended extensions in upcoming videos.
+:::
+
+---
+
+### Step 2: Installing Python
+
+1. Visit [python.org/downloads](https://python.org/downloads) to download the latest stable version of Python for your OS.  
+2. Run the Python installer:  
+   - **Important:** Check the box **“Add Python to PATH”** before clicking **Install Now**. This lets you run Python commands from your terminal or command prompt.  
+3. After installation, open your terminal (Command Prompt on Windows, Terminal on Mac/Linux) and type:  
+   ```bash
+   python --version
+   ```
+   This should display the installed Python version, confirming the setup was successful.
+
+---
+
+### Step 3: Testing Python in VSCode
+
+1. Open VSCode.  
+2. Click on the **Extensions** icon on the sidebar (looks like four squares) and search for **“Python”** by Microsoft. Install this extension — it adds Python support and debugging tools.  
+3. Create a new file in VSCode, save it as `hello.py`.  
+4. In the file, type the classic first program:  
+
+    ```python
+    print("Hello, World!")
+    ```
+
+5. Run your program by clicking the **play button** in the upper right corner or right-click the editor and select **Run Python File in Terminal**.  
+6. If you see `Hello, World!` printed in the terminal, congratulations — your setup works!
+
+:::tip
+In the lower right corner of VSCode, you’ll see which Python interpreter is active — useful if you have multiple Python versions installed.
+:::
+
+---
+
+### Additional Resources
+
+- [VSCode Official Documentation](https://code.visualstudio.com/docs)  
+- [Python.org Getting Started](https://docs.python.org/3/tutorial/index.html)  
+- [How to Use Python in VSCode](https://code.visualstudio.com/docs/python/python-tutorial)  
+- [VSCode Python Extension Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+
+---
+
+:::danger
+If commands like `python` or `code` don’t work in your terminal, double-check that you selected **Add to PATH** during installation.
+:::
+
+---
+
+### What’s Next?
+
+Next up, we’ll install **Git** — the tool that powers GitHub — and introduce **virtual environments** to help manage your Python project dependencies.
+
+Thanks for watching and happy coding!

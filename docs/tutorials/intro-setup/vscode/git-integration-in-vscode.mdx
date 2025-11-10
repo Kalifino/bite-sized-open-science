@@ -1,0 +1,108 @@
+---
+title: Git Integration in VSCode
+---
+
+import styles from '@site/src/css/tutorial.module.css';
+
+<div className={styles.videoGrid}>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/SzQlz4CVmkw?si=PKIMowZdraxO3IxX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+Welcome to another Bite-Sized tutorial! Today, we’ll walk you through how to use **Git and GitHub directly inside VSCode**.
+
+---
+
+### Cloning a Repo in VSCode
+
+1. Head over to your GitHub repository in your browser.  
+2. Click the green **Code** button, make sure **HTTPS** is selected, and copy the URL. It should look like:
+
+    ```
+    https://github.com/your-username/your-repo-name.git
+    ```
+
+3. Open VSCode and press **Ctrl+Shift+P** (or **Cmd+Shift+P** on Mac) to open the Command Palette.  
+4. Type:
+
+    ```
+    Git: Clone
+    ```
+
+5. Paste your repository URL, choose a local folder, and click **Open** when prompted.  
+6. VSCode will clone the repo, download its data to your local folder, then reload with your new project ready to go.
+
+---
+
+### Activating or Creating a Virtual Environment
+
+If the project already has a virtual environment folder (usually called `env` or `venv`), activate it by opening the terminal (**Ctrl + `**) and typing:
+
+- On **Windows**:
+
+    ```
+    .\env\Scripts\activate
+    ```
+
+- On **macOS/Linux**:
+
+    ```
+    source env/bin/activate
+    ```
+
+If there’s no virtual environment yet, create one with:
+
+    ```
+    python -m venv env
+    ```
+
+Then activate it using the same commands above for your system.
+
+*Tip:* Once activated, you’ll see the environment’s name in your terminal prompt. If VSCode asks you to select the Python interpreter, pick the one inside your `env` folder.
+
+---
+
+### Making a Change
+
+Let’s make a small edit, for example, update the `README` file. After saving, VSCode will detect your change.
+
+---
+
+### Committing the Change
+
+1. Open the **Source Control** tab on the left or press **Ctrl+Shift+G**.  
+2. You’ll see your changed file listed.  
+3. Write a commit message like:
+
+    ```
+    Update README
+    ```
+
+4. Click the checkmark icon above to commit.
+
+---
+
+### Pushing to GitHub
+
+To push your commit, click **Sync Changes** either in the Source Control tab or the status bar. The first time you might be asked to sign into GitHub—just follow the prompts.
+
+VSCode handles the rest!
+
+---
+
+### Additional Resources
+
+- [VSCode Git Documentation](https://code.visualstudio.com/docs/editor/versioncontrol)  
+- [GitHub Docs: Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)  
+- [Python Virtual Environments](https://docs.python.org/3/tutorial/venv.html)
+
+---
+
+### What’s Next?
+
+You just cloned a repo, set up your environment, made a change, and pushed it—all from VSCode!
+
+This is a workflow you’ll use repeatedly to keep your projects tidy and efficient.
+
+Check out our other tutorials and the additional info below the video to learn even more.
+
+Thanks for watching!
