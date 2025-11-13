@@ -119,7 +119,7 @@ const config = {
             {
               html: `
                 <a href="https://www.accounting-for-transparency.de/projects/open-science-data-center/" target="_blank" rel="noopener noreferrer">
-                  <img src="/bite-sized/img/institut-icon.png" alt="Our Institute" style="height:20px; vertical-align:middle; margin-right:8px;" />
+                  <img src="/bite-sized-open-science/img/institut-icon.png" alt="Our Institute" style="height:20px; vertical-align:middle; margin-right:8px;" />
                   TRR 266 Accounting for Transparency
                 </a>
               `,
@@ -127,7 +127,7 @@ const config = {
             {
               html: `
                 <a href="https://www.wiwi.hu-berlin.de/de/professuren/bwl/rwuwp" target="_blank" rel="noopener noreferrer">
-                  <img src="/bite-sized/img/uni-icon.png" alt="University Department" style="height:20px; vertical-align:middle; margin-right:8px;" />
+                  <img src="/bite-sized-open-science/img/uni-icon.png" alt="University Department" style="height:20px; vertical-align:middle; margin-right:8px;" />
                   Humboldt University Berlin
                 </a>
               `,
@@ -140,7 +140,7 @@ const config = {
             {
               html: `
                 <a href="https://github.com/trr266" target="_blank" rel="noopener noreferrer">
-                  <img src="/bite-sized/img/github-icon.png" alt="GitHub" style="height:20px; vertical-align:middle; margin-right:8px;" />
+                  <img src="/bite-sized-open-science/img/github-icon.png" alt="GitHub" style="height:20px; vertical-align:middle; margin-right:8px;" />
                   GitHub
                 </a>
               `,
@@ -148,7 +148,7 @@ const config = {
             {
               html: `
                 <a href="https://www.youtube.com/@BiteSizedOpenScienceTutorials" target="_blank" rel="noopener noreferrer">
-                  <img src="/bite-sized/img/youtube-icon.png" alt="YouTube" style="height:20px; vertical-align:middle; margin-right:8px;" />
+                  <img src="/bite-sized-open-science/img/youtube-icon.png" alt="YouTube" style="height:20px; vertical-align:middle; margin-right:8px;" />
                   YouTube
                 </a>
               `,
