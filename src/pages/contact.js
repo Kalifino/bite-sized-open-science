@@ -58,7 +58,7 @@ export default function ContactPage() {
             <input
               type="hidden"
               name="_next"
-              value="https://timnahw.github.io/bite-sized/contact-thanks"
+              value="https://trr266.github.io/bite-sized-open-science/contact-thanks"
             />
 
             {/* Visible form fields */}
