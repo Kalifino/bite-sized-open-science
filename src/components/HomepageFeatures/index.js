@@ -43,7 +43,7 @@ const FeatureList = [
   },
   {
     title: 'Interactive & Practical',
-    Svg: require('@site/static/img/icon_interactive.png').default,
+    Svg: require('@site/static/img/icon_interactive_practical.png').default,
     description: (
       <>
         Learn by doing with real-world examples and workflows using tools like GitHub, R, and Python.
