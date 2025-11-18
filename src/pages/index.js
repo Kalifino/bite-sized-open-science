@@ -223,7 +223,7 @@ export default function Home() {
 
             <div className={styles.videoGrid}>
               <iframe
-                src="https://www.youtube.com/embed?listType=playlist&list=UUkDX_2s3DXRzew9X8WzbH3Q"
+                src="https://www.youtube.com/embed?listType=playlist&list=UUFzAy95T4685fFaeGNdOxBA"
                 title="Latest YouTube Uploads"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
