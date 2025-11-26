@@ -181,10 +181,10 @@ const config = {
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'Bite Sized Open Science Tutorials' },
       { name: 'twitter:description', content: 'Concise video tutorials for reproducible research in economics and social sciences.' },
-      { name: 'twitter:image', content: 'https://timnahw.github.io/bite-sized/img/bite-sized-social-card.jpg' },
+      { name: 'twitter:image', content: 'https://trr266.github.io/bite-sized-open-science/img/bite-sized-social-card.jpg' },
       { property: 'og:title', content: 'Bite Sized Open Science Tutorials' },
       { property: 'og:description', content: 'Practical, concise videos to make reproducible research accessible to everyone.' },
-      { property: 'og:image', content: 'https://timnahw.github.io/bite-sized/img/bite-sized-social-card.jpg' },
+      { property: 'og:image', content: 'https://trr266.github.io/bite-sized-open-science/img/bite-sized-social-card.jpg' },
     ],
   },
 };
