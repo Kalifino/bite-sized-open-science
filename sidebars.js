@@ -35,6 +35,7 @@ const sidebars = {
             'intro-setup/github/intro-to-github-repos',
             'intro-setup/github/github-branches',
             'intro-setup/github/commits-and-pull-requests',
+            'intro-setup/github/github-issues',
             'intro-setup/github/coding-in-github',
           ],
         },

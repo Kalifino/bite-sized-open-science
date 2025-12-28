@@ -125,6 +125,11 @@ export default function Tutorials() {
                     </Link>
                   </li>
                   <li>
+                    <Link to="/tutorials/intro-setup/github/github-issues">
+                      GitHub Issues
+                    </Link>
+                  </li>
+                  <li>
                     <Link to="/tutorials/intro-setup/github/coding-in-github">
                       Coding in GitHub
                     </Link>
